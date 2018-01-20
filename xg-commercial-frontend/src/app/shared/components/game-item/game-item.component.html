@@ -1,0 +1,31 @@
+<div class="gallery row" *ngIf="game.games">
+  <div class="card card--clean">
+    <header class="card__header card__header--has-filter">
+      <h4>{{game.name}}</h4>
+      <ul class="category-filter category-filter--featured">
+        <li class="category-filter__item"><a href="javascript:void(0)" class="category-filter__link category-filter__link--reset category-filter__link--active">Show All</a></li>
+      </ul>
+    </header>
+  </div>
+</div>
+<div *ngIf="game.games">
+  <div *ngFor="let subGame of game.games;let i=index">
+    <div class="col-sm-3 col-xs-6" *ngIf="subGame && i<4">
+      <a href="team-gallery-album.html" class="gallery__item-inner card">
+        <figure class="gallery__thumb">
+          <img src="{{subGame.thumbnail}}" class="game-image" alt="">
+          <span class="btn-fab gallery__btn-fab"></span>
+        </figure>
+        <div class="gallery__content card__content">
+                <span class="gallery__icon game-name-icon">
+                  <span class="icon-camera"></span>
+                </span>
+          <div class="gallery__details">
+            <h4 class="gallery__name game-name">{{subGame.name}}</h4>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+

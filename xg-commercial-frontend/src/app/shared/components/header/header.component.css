@@ -1,0 +1,74 @@
+*:not(.fa){
+  font-family: "Montserrat", sans-serif;
+}
+a{
+  line-height: 62px;
+  text-decoration: none;
+}
+.user-profile {
+  width: 62px;
+  height: 62px;
+  line-height: 62px;
+  background-color: #ffdc11;
+  vertical-align: top;
+  margin-left: 27px;
+  position: relative;
+  display: inline-block;
+}
+
+.user-profile a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #2a2c31;
+  transition: all .4s .1s ease-in-out;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* .user-profile:hover a {
+  transform: rotate(360deg) !important;
+} */
+
+.user-profile i {
+  position: absolute;
+  left: 19px;
+  top: 12px;
+  font-size: 35px;
+}
+
+.login-form-container {
+  justify-content: center;
+}
+
+.login-form-header {
+  text-align: center;
+}
+
+.logout-text a {
+  color: #FF0000;
+}
+
+.posts--simple-list .posts__item {
+    overflow: hidden;
+    margin-bottom: 30px;
+    float: left;
+    width: 33.3333%;
+    height: 100px;
+    transition: transform 100ms ease-in;
+}
+.posts--simple-list .posts__item:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  background: white;
+}
+.posts--simple-list .posts__item > a{
+  display: flex;
+  align-items: center;
+}
+
+.posts figure.posts__thumb {
+    width: 100px;
+}

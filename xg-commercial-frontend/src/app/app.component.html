@@ -1,0 +1,11 @@
+<div class="site-wrapper clearfix">
+  <div class="site-overlay"></div>
+  <app-header #headerComponent
+              [user]="user"
+              [isUserAuthenticated]="isUserAuthenticated"
+              (onLogout)="onLogout()"
+              (onLogin)="onLogin($event)">
+  </app-header>
+  <router-outlet></router-outlet>
+<app-footer></app-footer>
+</div>

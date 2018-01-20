@@ -1,0 +1,5 @@
+<simple-notifications [options]="options"></simple-notifications>
+<profile-update-form *ngIf="user"
+                     (updateUserProfile)="updateProfile($event);"
+                     [user]="user">
+</profile-update-form>
